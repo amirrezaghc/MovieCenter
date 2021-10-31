@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+ <head>	
+  <title>
+  film downloading
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="themes/index_theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body >
+	<div style="display:table; width:100%;">
+	  <div style="display:table-cell; width:100%; " ><img class="logo" src="pics/items/logo.png"> </div>
+      <div  style="display:table-cell;  margin-left:50%;  ">
+	  <button class="btn btnstyle" onclick="window.open('pages/login.html')" >log in</button> 
+	  </div>
+	 </div>
+	<nav class="navbar navbar-inverse" >
+	 <ul class="nav navbar-nav navbar-right " style=" margin-right:1%;">
+	 <li><a href="#">conect us</a></li>
+	 <li><a href="#">about us</a></li>
+	 <li class="dropdown	"><a class="dropdown-toggle" data-toggle="dropdown" href="#" >animation
+	   <span class="caret"></span></a>
+	   <ul class="dropdown-menu">
+	    <li><h4 class="navtitr">sort by</h4></li>
+	    <li><a href="#">pupular</a></li>
+	    <li><a href="#">Release date</a></li>
+	    <li><a href="#">IMDB Rating</a></li>
+	    <li><a href="#">Metascore</a></li>
+	    <li><a href="#">alphabetical</a></li>
+	    <li><a href="#">Popularity</a></li>
+	    <li><a href="#">Runtime</a></li>
+	    <li><a href="#">number of Ratings</a></li>
+	   </ul>
+	  </li>
+	 <li class="dropdown	"><a class="dropdown-toggle" data-toggle="dropdown" href="#" >serie 
+	   <span class="caret"></span></a>
+	   <ul class="dropdown-menu">
+	    <li><h4 class="navtitr">sort by</h4></li>
+	    <li><a href="#">pupular</a></li>
+	    <li><a href="#">Release date</a></li>
+	    <li><a href="#">IMDB Rating</a></li>
+	    <li><a href="#">Metascore</a></li>
+	    <li><a href="#">alphabetical</a></li>
+	    <li><a href="#">Popularity</a></li>
+	    <li><a href="#">Runtime</a></li>
+	    <li><a href="#">number of Ratings</a></li>
+	   </ul>
+	  </li>
+	  <li class="dropdown	"><a class="dropdown-toggle" data-toggle="dropdown" href="#" >movie 
+	   <span class="caret"></span></a>
+	   <ul class="dropdown-menu">
+	    <li><h4 class="navtitr">sort by</h4></li>
+	    <li><a href="#">pupular</a></li>
+	    <li><a href="#">Release date</a></li>
+	    <li><a href="#">IMDB Rating</a></li>
+	    <li><a href="#">Metascore</a></li>
+	    <li><a href="#">alphabetical</a></li>
+	    <li><a href="#">Popularity</a></li>
+	    <li><a href="#">Runtime</a></li>
+	    <li><a href="#">number of Ratings</a></li>
+	   </ul>
+	  </li>
+	 </ul> 	
+	 <form class="navbar-form navbar-left searchborder" action="/action_page.php">
+	  <div class="input-group">
+	   <input type="text" class="form-control" placeholder="search . . ." name="search">
+	    <div class="input-group-btn">
+		 <button class="btn btn-default" type="submit">
+		  <i class="glyphicon glyphicon-search"></i>
+		 </button>
+		</div>
+	   </div>
+	  </form>
+    </nav>
+		<!-- top 5 section -->
+	<div class="sections">
+	<div class="container">
+  <h2 class="titre t5titr">top 5</h2>  
+  <div id="myCarousel" class="carousel slide t5res" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="pics/top5/tenet.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="pics/top5/notime.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="pics/top5/queen.jpg" alt="New york" style="width:100%;">
+      </div>
+	  <div class="item">
+        <img src="pics/top5/better.jpg" alt="New york" style="width:100%;">
+      </div>
+	  <div class="item">
+        <img src="pics/top5/ham.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+	<div  id="t5s" style="margin-bottom:1%; margin-left:40%;">
+	<img  style="width:10vw;"src="pics/items/top 5.png">
+	</div>
+	<div class="top5sec">
+	 <div>
+		<div class="top5divs">
+    <div class="hovereffect">
+        <img class="img-responsive" src="pics/top5/tenet.jpg" alt="">
+            <div class="overlay">
+                <h2>tenet</h2>
+				<p>
+					<a href="#">visit</a>
+				</p>
+            </div>
+    </div>
+</div>
+	  </div>
+	  <div>
+		<div class="top5divs">
+    <div class="hovereffect">
+        <img class="img-responsive" src="pics/top5/notime.jpg" alt="">
+        <div class="overlay">
+           <h2>no time to die</h2>
+           <a class="info" href="#">visit</a>
+        </div>
+    </div>
+</div>
+	  </div>
+	   <div>
+	<div class="top5divs">
+    <div class="hovereffect">
+        <img class="img-responsive" src="pics/top5/queen.jpg" alt="">
+        <div class="overlay">
+           <h2>the queens gambit</h2>
+           <a class="info" href="#">visit</a>
+        </div>
+    </div>
+</div>
+	  </div>
+	   <div>
+	  	<div class="top5divs">
+    <div class="hovereffect">
+        <img class="img-responsive" src="pics/top5/better.jpg" alt="">
+        <div class="overlay">
+           <h2>better call saul</h2>
+           <a class="info" href="#">visit</a>
+        </div>
+    </div>
+</div>
+	  </div>
+	   <div>
+	 	<div class="top5divs">
+    <div class="hovereffect">
+        <img class="img-responsive" src="pics/top5/ham.jpg" alt="">
+        <div class="overlay">
+           <h2>hamilton</h2>
+           <a class="info" href="#">visit</a>
+        </div>
+    </div>
+</div>
+	  </div>
+	</div>
+	<div><br></div>
+	</div>
+		<!-- the topnews part -->
+	<div class="sections">
+	 <div style="margin-left:4%;">
+	    <h2 class="titre"><br>top news</h2>
+	 </div>
+	 <div class="topnews">
+	  <div class="news">
+	  <a href="#" style="text-decoration:none; color:black;">
+		<div class="innews">
+		 <div class="newspic"><img src="pics/news/crown.jpg" ></div>
+		 <div class="newstext">
+		 <h4> <b>‘The Crown': Netflix Rejects U.K. Culture Secretary’s Request for Fiction Disclaimer</b></h4>
+		 <p> “The Crown” may be stirring up some grumbles in Buckingham Palace and 10 Downing Street, 
+		 but Netflix says it won’t grant requests to include a disclaimer that the British biopic series is a work of fiction.
+		 The request came from U.K. Culture Secretary Oliver Dowden, who said in an
+		 interview with the Daily Mail that “a generation of viewers who did not live 
+		 through these events may mistake fiction for fact.” The latest season of “The Crown”
+		 is set in the ’80s and ’90s and follows the doomed marriage between Prince Charles and Princess Diana.
+</p>
+		 </div>
+		</div>
+	</a>
+		</div>
+	
+	  <div class="news">
+	   <a href="#" style="text-decoration:none; color:black;">
+	 <div class="innews">
+		 <div class="newspic"><img src="pics/news/rudy.jpg"></div>
+		 <div class="newstext">
+		 <h4>  <b>Rudy Giuliani Tests Positive for Covid-19</b></h4>
+				 <p>President Donald Trump says his personal attorney Rudy Giuliani has tested positive for coronavirus.
+		The former New York mayor has traveled extensively to battleground states in recent weeks in an effort to
+		 help Trump subvert his election loss.
+		Trump, who confirmed Giuliani’s positive test
+		 in a Sunday afternoon tweet, wished him a speedy recovery..
+		“@RudyGiuliani, by far the greatest mayor in the history of NYC, and who has been working tirelessly exposing
+		 the most corrupt election (by far!) in the history of the USA, has tested positive for the China Virus. Get better soon 
+		 Rudy, we will carry on</p>
+		 </div>
+		</div>
+	     </a>
+	  </div>
+	
+	  <div class="news">
+	   <a href="#" style="text-decoration:none; color:black;">
+	<div class="innews">
+		 <div class="newspic"><img src="pics/news/excl.jpg" ></div>
+		 <div class="newstext">
+		<h4><b>Universal SVP Global Communications Jenny Tartikoff to Depart Studio (Exclusive)</b></h4>
+			<p> Universal Filmed Entertainment Group (Ufeg) SVP of Global Communications Jenny Tartikoff
+			will depart the studio at the end of the year to pursue other leadership opportunities in the media and entertainment space.
+			Tartikoff was appointed to the role in 2016 and was responsible for executive communications
+			managing filmmaker relationships, crisis communications, events and executive communications, and guiding day-to-day studio strategy. </p>
+		 </div>
+		 </div>
+	     </a>
+		 </div>
+		 <div class="news">
+	   <a href="#" style="text-decoration:none; color:black;">
+	  <div class="innews">
+		 <div class="newspic"><img src="pics/news/god.jpg"></div>
+		 <div class="newstext">
+		 <h4> <b> ‘The Godfather, Coda: The Death of Michael Corleone’ Is a Chance to Revisit a Film That Didn’t Deserve Its Brickbats</b></h4>
+		 <p>This past summer, I happened to watch “The Godfather Part III” again. At the time, it wasn’t known that Francis Ford Coppola was preparing
+		 a new version of the movie, one that would be retitled “Mario Puzo’s The Godfather, Coda: The Death of Michael Corleone.” It’s probably a good 
+		 thing that Coppola hasn’t decided to retitle any of his other films. Nevertheless, the cumbersome title of “The Godfather, Coda” does provoke one’s curiosity
+		 . It makes the movie sound like a different animal than it was before. (It opens in a handful of theaters today and will be available On Demand and Blu-ray starting Dec. 8.)</p>
+		 </div>
+		</div>
+		</a>
+	  </div>
+	  </div>
+	  
+	  <a href="#" class="morelinks" style="margin-left:45%;">more...</a>
+	</div>
+		<!-- inception film -->
+	<div class="sections"> 
+	<h2 class="titre" style="margin-left:2%;"> <br>film </h2>
+	<div class="infilm">
+	 <div class="detailsec">
+		<div class="picinfilm">
+			<img src="pics/inception/inception.jpg">
+		</div >
+		<div class="infos">
+			<h1>inception</h1>
+			<p><b>Initial release:</b> July 8, 2010 (United Kingdom)
+			<br><b>Director:</b> Christopher Nolan
+			<br><b>Screenplay:</b> Christopher Nolan
+			<br><b>IMDB:</b>8.8/10
+			<br><b>Rotten Tomatoes:</b>87%
+			<br><b>Metacritic:</b>74%
+			<br><b>Box office:</b> 836.8 million USD
+			<br><br> <h4><b>story line :</b></h4>
+			Cobb steals information from his targets by entering their dreams.
+			Saito offers to wipe clean Cobb's criminal history as payment for performing an 
+			inception on his sick competitor's son.<br><br>
+			<br><br><br>
+			</p>
+			</div>
+		
+	 </div>
+	
+	 	</div>
+		
+		<!--awards part -->
+	<div class="awards">
+		<div class="innews inawards">
+		 <div class="newspic"><img  style="width:90	%; margin:5%;"src="pics/items/awards.png" ></div>
+		 <div class="newstext">
+		 <h2 id="awardsh2"> <b>awards</b></h2>
+		 <p id="awardsp">won <b>2 oscars</b> and <b>3 goldenglobs</b> and 120<a href="#"> other wins </a></p>
+		 </div>
+	</div>
+		</div>
+		
+		<!--download part -->
+	<div class="awards ">
+	<br>
+	<h2 class="paytitrs">payment<h2>
+	 <div class="price">
+		<img src="pics/items/price.png">
+		<h3>price:6$<h3>
+	</div>
+	<div class="payment">
+	 <a class="paybtns" href="#"><img src="pics/items/paypal.png"></a>
+	 <a class="paybtns" href="#"><img src="pics/items/google.png"></a>
+	 <a class="paybtns" href="#"><img src="pics/items/applepay.png"></a>
+	 <a class="paybtns" href="#"><img src="pics/items/visa.png"></a>
+	</div>
+	<br>
+	<div style="margin-left:35%; margin-top:5%;">
+	<h4 class="quility">4k _ (3.7 gb)</h4>
+	 <button class="btndwn"><i class="fa fa-download"></i> Download</button>
+	 <br><br>
+	 <h4 class="quility">1080(1.4 gb)</h4>
+	 <button class="btndwn"><i class="fa fa-download"></i> Download</button><br><br>
+	 <h4 class="quility">720(860 mb)</h4>
+	 <button class="btndwn"><i class="fa fa-download"></i> Download</button><br><br>
+	 <h4 class="quility">480(304 mb)</h4>
+	 <button class="btndwn"><i class="fa fa-download"></i> Download</button>
+	</div>
+	</div>
+		<!--casts part -->
+		 <h2 class="titre casttxt" style="margin-left:2%;"> casts </h2>
+	<div class="top5sec incast ">
+	
+	 <div>
+		<div class="castimg">
+    <div class="hovereffect">
+        <img class="img-responsive" src="pics/inception/leo.jpg" alt="">
+            <div class="overlay">
+                <h3>leonardo decaprio</h3>
+            </div>
+    </div>
+</div>
+	  </div>
+	  <div>
+		<div class="castimg">
+    <div class="hovereffect">
+        <img class="img-responsive" src="pics/inception/elliot.jpg" alt="">
+        <div class="overlay">
+            <h3>elliot page</h3>
+        </div>
+    </div>
+</div>
+	  </div>
+	   <div>
+	<div class="castimg">
+    <div class="hovereffect">
+        <img class="img-responsive" src="pics/inception/tom.jpg" alt="">
+        <div class="overlay">
+            <h3>tom hardy</h3>
+        </div>
+    </div>
+</div>
+	  </div>
+	   <div>
+	  	<div class="castimg">
+    <div class="hovereffect">
+        <img class="img-responsive" src="pics/inception/morphi.jpg" alt="">
+        <div class="overlay">
+            <h3>cillian murphy</h3>
+        </div>
+    </div>
+</div>
+	  </div>
+	   <div>
+	 	<div class="castimg">
+    <div class="hovereffect">
+        <img class="img-responsive" src="pics/inception/micheal.jpg" alt="">
+        <div class="overlay">
+           <h3>micheal caine</h3>
+        </div>
+    </div>
+</div>
+	  </div>
+	    <div>
+	 	<div class="castimg">
+    <div class="hovereffect">
+        <img class="img-responsive" src="pics/inception/jozeph.jpg" alt="">
+        <div class="overlay">
+           <h3>jozeph gorden-levitt</h3>
+        </div>
+    </div>
+</div>
+	  </div>
+	  <div style=" vertical-align:middle;">  <a href="#"  style="margin-top:20%;" class="morelinks"  >more...</a></div>
+	  </div>
+	  <br>
+		<!--comment part -->
+		<h2 class="titre casttxt" style="margin-left:2%;"> comments </h2>
+		<br>
+		<label class="commentlbls">title:</label>
+		<input type="text" class="form-control titletxt" id="usr">
+		<label class="commentlbls">comment:</label>
+		<textarea name="comments" id="comments"  class="commenttxt"></textarea>
+		<button class="btndwn sendbtn">send</button>
+		<br><br>
+	  </div>
+		<!--footer-->
+	<div class="sections" style="margin-bottom:0px;">
+	 <p class="copyright"> © developed and designed by <a href="#">amirreza ghorbanzadeh</a></p>
+	</div>
+	
+ </body>
+</html>
